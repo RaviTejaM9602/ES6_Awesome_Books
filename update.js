@@ -1,5 +1,6 @@
-const addBtn = document.querySelector('#add-btn');
 let books = JSON.parse(localStorage.getItem('books'));
+const addBtn = document.querySelector('.add-btn');
+const bookList = document.querySelector('#book-list');
 
 const printErrorMsg = (message) => {
   const errMsg = document.querySelector('.err-msg');
@@ -55,11 +56,8 @@ const displayBook = (id, title, author) => {
   const bookList = document.querySelector('#book-list');
   bookList.classList.add('border');
   const li = document.createElement('li');
-  li.innerHTML = `<div class="d-flex-only">
-  <h2><q>${title}</q></h2>
-  <span>by</span>
-  <h2>${author}</h2>
-  </div>`;
+  li.innerHTML = `
+  <h2> "${title}" by "${author}"</h2>`;
   const removeBookBtn = document.createElement('button');
   removeBookBtn.textContent = 'Remove';
   li.appendChild(removeBookBtn);
@@ -97,3 +95,47 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 });
+
+// navs on clicks
+const bookLists = document.querySelector('.books');
+const addNewBook = document.querySelector('.create');
+const contact = document.querySelector('.contact');
+
+const formContainer = document.querySelector('.form-container');
+const bookContainer = document.querySelector('.main-books');
+const contactContainer = document.querySelector('.contact-container');
+
+bookLists.addEventListener('click', () => {
+  bookContainer.style.display = 'block';
+  formContainer.style.display = 'none';
+  contactContainer.style.display = 'none';
+  bookLists.classList.toggle('blue');
+  addNewBook.classList.remove('blue');
+  contact.classList.remove('blue');
+});
+
+addNewBook.addEventListener('click', () => {
+  formContainer.style.display = 'block';
+  bookContainer.style.display = 'none';
+  contactContainer.style.display = 'none';
+  bookLists.classList.remove('blue');
+  contact.classList.remove('blue');
+  addNewBook.classList.toggle('blue');
+});
+
+contact.addEventListener('click', () => {
+  contactContainer.style.display = 'block';
+  formContainer.style.display = 'none';
+  bookContainer.style.display = 'none';
+  contact.classList.toggle('blue');
+  bookLists.classList.remove('blue');
+  addNewBook.classList.remove('blue');
+});
+
+// date
+const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+const currentDate = new Date();
+const date = ` ${months[currentDate.getMonth()]} ${currentDate.getDate()} ${currentDate.getFullYear()}`;
+const time = currentDate.toLocaleTimeString();
+const websiteDate = document.querySelector('.date');
+websiteDate.innerHTML = `${date} ${time}`;
