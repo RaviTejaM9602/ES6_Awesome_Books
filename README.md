@@ -19,9 +19,9 @@ In the following link, you can view (Coming Soon)).
 
 ## Screenshot
 
-![Book_Store_App(Page1)](./Images/Image1.png)
-![Book_Store_App(Page2)](./Images/Image2.png)
-![Book_Store_App(Page3)](./Images/Image3.png)
+![Book_Store_App(Page1)](./images/Image1.png)
+![Book_Store_App(Page2)](./images/Image2.png)
+![Book_Store_App(Page3)](./images/Image3.png)
 
 
 ## Getting Started
