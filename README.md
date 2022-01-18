@@ -23,22 +23,6 @@ In the following link, you can view (Coming Soon)).
 ![Book_Store_App(Page2)](./images/Image2.png)
 ![Book_Store_App(Page3)](./images/Image3.png)
 
-
-## Getting Started
-
-**This is an example of how you may give instructions on setting up your project locally.**
-## Prerequisites
-
-### Browser
-
-Any modern browser works! :smile:
-
-
-### Knowledge
-
-Basic knowledge of the terminal and git
-
-
 ### Getting Started
 
 To get a local copy follow these steps:
@@ -46,7 +30,7 @@ To get a local copy follow these steps:
 1. Clone the repo by typing on your terminal
 
 ```
-git clone git@github.com:RaviTejaM9602/Awesome_Books.git
+git clone https://github.com/RaviTejaM9602/ES6_Awesome_Books
 ```
 
 2. Access the repo with
@@ -62,7 +46,16 @@ Run the live server or simply open index.html with your browser.
 code .
 ```
 
+## Project Setup 
 
+1. Create a new directory and initialize it with git.
+2. Use npm init -y command to create package.json file.
+3. Create the entry point for your JavaScript code called index.js
+4. Create index.css file for your styles.
+5. Create the main index.html file. Link your index.js and index.css files there.
+6. Create a directory called modules.
+ 
+ For More Info ...(https://github.com/microverseinc/curriculum-javascript/blob/main/books/books_with_es6.md)
 ## Authors
 
 👤 **Ravi Teja M**
