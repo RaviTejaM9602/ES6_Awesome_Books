@@ -25,28 +25,11 @@ In the following link, you can view (Coming Soon)).
 
 ### Getting Started
 
-To get a local copy follow these steps:
+1. Clone the repository git clone https://github.com/RaviTejaM9602/ES6_Awesome_Books &2. Open terminal and navigate to the downloaded / project folder.
+3. Run npm install in the Terminal(Installs the dependency Pakages required).
+4. Run the live server or simply open index.html with your browser.
 
-1. Clone the repo by typing on your terminal
-
-```
-git clone https://github.com/RaviTejaM9602/ES6_Awesome_Books
-```
-
-2. Access the repo with
-
-```
-cd Conference
-```
-
-3. Clone the Repo or Download the Zip file
-Run the live server or simply open index.html with your browser.
-
-```
-code .
-```
-
-## Project Setup 
+## Project Setup for any Viewer/User reference (To rebuild this project ) :
 
 1. Create a new directory and initialize it with git.
 2. Use npm init -y command to create package.json file.
@@ -54,8 +37,10 @@ code .
 4. Create index.css file for your styles.
 5. Create the main index.html file. Link your index.js and index.css files there.
 6. Create a directory called modules.
- 
+7. Next Install npm install --save luxon. (To get the current date and time.)
+
  For More Info ...(https://github.com/microverseinc/curriculum-javascript/blob/main/books/books_with_es6.md)
+
 ## Authors
 
 👤 **Ravi Teja M**
